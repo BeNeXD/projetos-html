@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap');
+
+/*reset*/
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/********Home*******/
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(143, 143, 143, 0);
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px 15px 15px 15px;
+}
+/*header*/
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position:fixed;
+    width:100%;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    background:  #000000;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 35px 35px;
+    transition: .5s;
+    list-style: none;
+    transform-style: preserve-3d;
+}
+.cabecalho-logo{
+    height: 400px;
+    margin-top: 70px;
+}
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+.cabecalho-menu-item{
+    text-decoration: none;
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: .3s;
+
+}
+.active{
+    font-size: 36px;
+    transition: .3s;
+}
+.cabecalho-menu-item:hover{
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #868686;
+    transition: .3s;
+}
+.black{
+    height: 120px;
+    width: 100%;
+    left: 10px;
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+/*body*/
+.corpo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   margin-top: 250px;
+}
+.conteudo-corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo-botao{
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 56px;
+    background-color: #000000;
+    color: #ffffff;
+    width: 420px;
+    height: 80px;
+    border-radius: 66.5px;
+    margin-bottom: -13px;
+}
+.conteudo-escrito{
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 60px;
+}
+.conteudo-corpo-imagem{
+    display: flex;
+}
+.palhetafront-imagem {
+    height: 300px;
+    transition: .4s;
+    margin-left: -15%;
+}
+ .palhetafundo-imagem{
+    height: 340px;
+    transition: .4s;
+    margin-left: 55%;
+}
+.palhetafront-imagem:hover{
+    height: 315px;
+    margin-left: -16.5%;
+}
+
+/*footer*/
+.rodape{
+    position: relative;
+    width:100%;
+    height: fit-content;
+    left: 0px;
+    top: 500px;
+    background: #000000;
+}
+.rodape-imagem{
+    align-items: center;
+    height: 200px;
+}
+
+/********Sobre*******/
+/*body*/
+.corpo-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+.conteudo-corpo-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.conteudo-corpo2-sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #000000 ;
+    padding-top: 200px;
+    
+}
+.conteudo-imagem-arvore{
+    height: 400px;
+    transition: .5s;
+}
+.conteudo-imagem-arvore:hover{
+    height: 450px;
+    transition: .5s;
+}
+.conteudo-imagem-mao{
+    padding-right: 100px;
+    height: 200px;
+    transition: .5s;
+    
+}
+.conteudo-imagem-mao:hover{
+    padding-right: 100px;
+    height: 220px;
+    transition: .5s;
+}
+.conteudo-escrito-sobre{
+    display: flex;
+    flex-direction:column;
+}
+.conteudo-escrito2-sobre{
+display: flex;
+flex-direction: row;
+}

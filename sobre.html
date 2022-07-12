@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compre já sua eco palheta feita de madeira reaproveitada!">
+    <title>Eco Palhetas</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+            }
+            else {
+                $('header').removeClass('black');
+            }
+        });
+        $('.cabecalho-menu').on('click', 'a', function () {
+            $('.cabecalho-menu a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="/home.html "><img class="cabecalho-logo" src="./content/images/eco branca.png" alt="logosite"></a>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item " href="./home.html"> Inicio </a>
+            <a class="cabecalho-menu-item active" href="./sobre.html"> Sobre </a>
+            <a class="cabecalho-menu-item" href="#"> Palhetas </a>
+            <a class="cabecalho-menu-item" href="#"> Contato </a>
+        </nav>
+    </header>
+
+    <main class="corpo-sobre">
+        <section class="conteudo-corpo-sobre">
+            <div class="conteudo-escrito-sobre">
+                <p class="conteudo-escrito">Feitas de</p>
+                <p class="conteudo-escrito">madeira<strong> reaproveitada </strong> </p>
+            </div>
+            <img class="conteudo-imagem-arvore" src="./content/images/3d-fluency-evergreen-tree.png" alt="arvore">
+        </section>
+
+        <section class="conteudo-corpo2-sobre">
+            <img class="conteudo-imagem-mao"
+                src="./content/images/3d-hands-fun-and-wild-white-skin-hands-showing-a-heart-sign.png" alt="highfive">
+            <div class="conteudo-escrito2-sobre">
+                <p class="conteudo-escrito">Feitas à <strong> mão </strong> </p>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="./content/images/eco branca.png" alt="">
+    </footer>
+</body>
+
+</html>
